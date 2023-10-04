@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission</title>
+    <link rel="stylesheet" href="styles/admission.css"> <!-- Add your custom CSS file here -->
+</head>
+<body>
+    <header>
+        <!-- Include your navigation menu here or use a common header -->
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="annual_report.html">Annual Report</a></li>
+                <li><a href="programs_and_fees.html">Programs & Fees</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="admin_login.html">Admin Login</a></li>
+                <li><a href="subadmin_login.html">Subadmin Login</a></li>
+                <li><a href="chatbot.html">Chat with Us</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h1>Admission Form</h1>
+            <form action="/admission/submit" method="POST">
+                <!-- Personal Information Section -->
+                <h2>Personal Information</h2>
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="dateOfBirth">Date of Birth:</label>
+                    <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+                </div>
+
+                <!-- Academic Information Section -->
+                <h2>Academic Information</h2>
+                <div class="form-group">
+                    <label for="gradeLevel">Grade Level:</label>
+                    <input type="text" id="gradeLevel" name="gradeLevel" required>
+                </div>
+                <div class="form-group">
+                    <label for="currentCourses">Current Courses:</label>
+                    <input type="text" id="currentCourses" name="currentCourses" required>
+                </div>
+
+                <!-- Payment Information Section -->
+                <h2>Payment Information</h2>
+                <div class="form-group">
+                    <label for="paymentAmount">Payment Amount:</label>
+                    <input type="number" id="paymentAmount" name="paymentAmount" required>
+                </div>
+                <div class="form-group">
+                    <label for="paymentMethod">Payment Method:</label>
+                    <select id="paymentMethod" name="paymentMethod" required>
+                        <option value="credit_card">Credit Card</option>
+                        <option value="debit_card">Debit Card</option>
+                        <option value="bank_transfer">Bank Transfer</option>
+                        <option value="cash">Cash</option>
+                    </select>
+                </div>
+
+                <!-- Upload Documents Section -->
+                <h2>Upload Documents</h2>
+                <div class="form-group">
+                    <label for="photo">Photo:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <label for="transcript">Academic Transcript:</label>
+                    <input type="file" id="transcript" name="transcript" accept=".pdf,.doc,.docx" required>
+                </div>
+
+                <!-- Buttons for Preview and Submit -->
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+                <div class="form-group">
+                    <button type="button" id="previewButton">Preview</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Include your footer content here or use a common footer -->
+    </footer>
+</body>
+</html>

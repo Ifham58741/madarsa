@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include your custom CSS file here -->
+    <style>
+        /* Additional CSS for styling */
+        /* Add your styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin-top: 20px;
+            text-align: center;
+            color: #333;
+        }
+        
+        .search-box {
+            text-align: center;
+            margin: 20px auto;
+        }
+        
+        .search-input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+        }
+        
+        .search-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        .search-button:hover {
+            background-color: #0056b3;
+        }
+        
+        .student-details {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px auto;
+            width: 80%;
+            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+        }
+        
+        .student-details h2 {
+            color: #333;
+        }
+        
+        .student-details p {
+            color: #666;
+        }
+        
+        .id-card-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin-top: 15px;
+        }
+        
+        .id-card-button:hover {
+            background-color: #0056b3;
+        }
+        
+        /* Styles for Result and Fees Sections */
+        .result-section,
+        .fees-section {
+            margin-top: 20px;
+        }
+        
+        .fees-button {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin-top: 15px;
+        }
+        
+        .fees-button:hover {
+            background-color: #1e7e34;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Include your navigation menu here or use a common header -->
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="annual_report.html">Annual Report</a></li>
+                <li><a href="programs_fees_structure.html">Programs & Fees</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="admin_login.html">Admin Login</a></li>
+                <li><a href="subadmin_login.html">Subadmin Login</a></li>
+                <li><a href="#">Chat with Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Student Information</h1>
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Enter Roll Number">
+                <button class="search-button">Search</button>
+            </div>
+            <div class="student-details">
+                <h2>Student Name</h2>
+                <p>Date of Birth: dd/mm/yyyy</p>
+                <p>Address: Address Line 1, Address Line 2, City</p>
+                <p>Grade Level: Grade 10</p>
+                <p>Current Courses: Course 1, Course 2</p>
+                <button class="id-card-button">Generate ID Card</button>
+            </div>
+
+            <!-- Result Section -->
+            <section class="result-section">
+                <h2>Result Information</h2>
+                <!-- Add result information here -->
+            </section>
+
+            <!-- Fees Section -->
+            <section class="fees-section">
+                <h2>Fees Information</h2>
+                <!-- Add fees information here -->
+                <button class="fees-button">Pay Fees</button>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Include your footer content here or use a common footer -->
+        <p>&copy; 2023 Madarsa Management System</p>
+    </footer>
+
+    <script src="scripts.js"></script> <!-- Include your JavaScript file here -->
+</body>
+</html>

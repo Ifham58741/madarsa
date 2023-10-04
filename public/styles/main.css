@@ -1,0 +1,206 @@
+/* Style the header/navigation menu */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  header a:hover {
+    color: #f8f8f8;
+  }
+  
+  /* Add a logo or site title */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Style buttons */
+  .button-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .button-secondary {
+    background-color: #fff;
+    color: #007bff;
+    border: 1px solid #007bff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-secondary:hover {
+    background-color: #f8f8f8;
+  }
+  
+  /* Style forms */
+  .form-container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .form-input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Style tables */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .table th, .table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #f0f0f0;
+  }
+  
+  /* Style footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    /* Define styles for smaller screens */
+    .logo {
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    /* Define styles for even smaller screens */
+    .logo {
+      font-size: 18px;
+    }
+  }
+  /* Reset some default styles */
+body,
+html,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navigation Menu Styles */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Button Styles */
+.button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff3300;
+    transform: scale(1.1);
+}
+
+/* Add more styles and animations as needed */
+
+  

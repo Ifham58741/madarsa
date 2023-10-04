@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs and Fees Structure</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include your custom CSS file here -->
+    <style>
+        /* Additional CSS for styling */
+        /* Add your styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin-top: 20px;
+            text-align: center;
+            color: #333;
+        }
+        
+        .program-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        
+        .program {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+            transition: transform 0.2s;
+        }
+        
+        .program:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+        }
+        
+        .program h2 {
+            color: #333;
+        }
+        
+        .program p {
+            color: #666;
+        }
+        
+        .program .fee {
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+        }
+        
+        .program .apply-button,
+        .program .learn-more-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 15px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        .program .apply-button:hover,
+        .program .learn-more-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Include your navigation menu here or use a common header -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="annual_report.html">Annual Report</a></li>
+                <li><a href="programs_and_fees.html">Programs & Fees</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="admin_login.html">Admin Login</a></li>
+                <li><a href="subadmin_login.html">Subadmin Login</a></li>
+                <li><a href="chatbot.html">Chat with Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Programs and Fees Structure</h1>
+            <div class="program-list">
+                <div class="program">
+                    <h2>Program 1</h2>
+                    <p>Description of Program 1.</p>
+                    <p class="fee">Program Fee: $500 per month</p>
+                    <button class="apply-button">Apply</button>
+                    <button class="learn-more-button">Learn More</button>
+                </div>
+                <div class="program">
+                    <h2>Program 2</h2>
+                    <p>Description of Program 2.</p>
+                    <p class="fee">Program Fee: $600 per month</p>
+                    <button class="apply-button">Apply</button>
+                    <button class="learn-more-button">Learn More</button>
+                </div>
+                <!-- Add more program entries as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Include your footer content here or use a common footer -->
+        <p>&copy; 2023 Madarsa Management System</p>
+    </footer>
+
+    <script src="scripts.js"></script> <!-- Include your JavaScript file here -->
+</body>
+</html>

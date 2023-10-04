@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="styles/admin.css"> <!-- You can link to your CSS file here if needed -->
+    <!-- <link rel="stylesheet" href="styles/main.css"> -->
+</head>
+<body>
+    <div class="navbar"  id="myNavbar">
+    <nav>
+       
+        <ul>
+            <li><a href="#" class="icon" onclick="toggleNavbar()">&#9776;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="annual_report.html">Annual Report</a></li>
+            <li><a href="programs_fees_structure.html">Programs & Fees</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="admin_login.html">Admin Login</a></li>
+            <li><a href="subadmin_login.html">Subadmin Login</a></li>
+            <li><a href="chatbot.html">Chat with Us</a></li>
+        </ul>
+
+    </nav>
+</div>
+    <div class="login-container">
+        <h1>Admin Login</h1>
+        <form action="/admin/login" method="POST"> <!-- Define the route for admin login -->
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group"class="button">
+                <button class ="button"type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        // JavaScript to toggle responsive navbar
+        function toggleNavbar() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+</html>
